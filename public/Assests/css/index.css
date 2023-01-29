@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wallpaper {
+    position: absolute;
+    background-image: url("../images/6308.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    filter: blur(5px); 
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    width: 290px;
+    height: 590px;
+}
+
+.face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 103%;
+    box-shadow: 0 15px 35px rgba(0,0,0,1);
+    border-radius: 30px;
+    background: rgb(37, 36, 36);
+    border: 3px solid rgba(70, 70,70);
+}
+
+#screen{
+    width: 96%;
+    height: 43%;
+    position: absolute;
+    top: 35px;
+    left: 6px;
+    border-radius: 30px;
+    mix-blend-mode: darken;
+}
+
+.container{
+    width: 96%;
+    height: 96%;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.face::before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 115px;
+    width: 40px;
+    height: 4px;
+    background: rgb(8, 8, 8);
+    border: 3px solid #0e0e0e;
+    background: rgba(34, 34, 34, 0.830);
+    border: 0;
+    z-index: 1;
+}
+
+.face::after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 84px;
+    width: 125px;
+    height: 20px;
+    background: rgb(8, 8, 8);
+    border: 3px solid #0e0e0e;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#camera{
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    left: 174px;
+    z-index: 1;
+
+}
+
+.volume{
+    position: absolute;
+    top: 130px;
+    right: -7px;
+    width: 4.1px;
+    height: 80px;
+    background: #383534;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.power{
+    position: absolute;
+    top: 230px;
+    right: -7px;
+    width: 4.1px;
+    height: 40px;
+    background: #383534;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#slogan1{
+    position: absolute;
+    top: 328px;
+    left: 26px;
+    font-size: 23px;
+    font-weight: bolder;
+    font-family: 'Ms Madi', cursive;
+    color: #a787c7;
+}
+
+#slogan2{
+    position: absolute;
+    top: 366px;
+    left: 45px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Ms Madi', cursive;
+    color: #E64398;
+}
+
+#logo{
+    position: absolute;
+    height: 200px;
+    top: 10px;
+    left: 5px;
+
+}
+
+#button{
+    position: absolute;
+    top: 452px;
+    left: 48px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    height: 50px;
+    width: 204px;
+    padding: 8px;
+    border-radius: 11px;
+    font-family: 'Ms Madi', cursive;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: solid;
+    background-image: linear-gradient(to left, #5AB9EA 0%, #8860D0 50%, #5AB9EA 100%);
+}
+
+#button:hover{
+    background-image: linear-gradient(to right, #8860D0 0%, #5AB9EA 60%, #8860D0 100%);
+    transition: 0.5;
+    cursor: pointer;
+
+}

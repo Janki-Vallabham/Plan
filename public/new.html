@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan_it</title>
+    <link rel="icon" href="Assests/images/WhatsApp Image 2022-09-01 at 12.32.29 PM.jpeg">
+    <link rel="stylesheet" href="Assests/css/new.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="Assests/images/WhatsApp Image 2022-09-01 at 12.32.29 PM.jpeg" alt="" id="logo">
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#" onclick='loadHtml("main","daily.html")'><i class="fa-solid fa-list-check"></i> Daily goals</a></li>
+                <li><a href="mothly.html"><i class="fa-regular fa-rectangle-list"></i></i> Monthly goals</a></li>
+                <li><a href="yearly.html"><i class="fas fa-project-diagram"></i>Yearly goals</a></li>
+                <li><a href="#"><i class="fa-regular fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Notes</a></li>
+                <li><a href="#"><i class="fa-solid fa-signal"></i> Status</a></li>
+            </ul> 
+            <div class="logout">
+              <a href="#"><i class="fa-sharp fa-solid fa-right-from-bracket"></i>logout</a>
+          </div>
+        </div>
+        <header>
+            <ul class="navigation">
+                <li><a href="#"><i class="fa-solid fa-plus"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-images"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="list">
+                <div class="controls">
+                    <div class="filters">
+                        <span id="all" class="active">All</span>
+                        <span id="pending" >Pending</span>
+                        <span id="completed" >Completed</span>
+                    </div>
+                    <button class="clear-btn">Clear All</button>
+                </div>
+                <ul class="task-box">
+                    <li class="task">
+                        <label for="1">
+                            <input type="checkbox" id="1">
+                            <p>Home-work</p>
+                        </label>
+                        <div class="settings">
+                            <i class="uil uil-ellipsis-h"></i>
+                            <ul class="task-menu">
+                                <li><i class="uil uil-pen"></i>Edit</li>
+                                <li><i class="uil uil-trash"></i>Delete</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="task">
+                        <label for="2">
+                            <input type="checkbox" id="2">
+                            <p>Complete notes</p>
+                        </label>
+                        <div class="settings">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </div>
+                    </li>
+                    <li class="task">
+                        <label for="3">
+                            <input type="checkbox" id="3">
+                            <p>Complete project</p>
+                        </label>
+                        <div class="settings">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </div>
+                    </li>
+                    <li class="task">
+                        <label for="4">
+                            <input type="checkbox" id="4">
+                            <p>bring grocss</p>
+                        </label>
+                        <div class="settings">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="task-input">
+                <!-- <img src="bars-icon.svg" alt="icon"> -->
+                <input type="text" placeholder="Add new task">
+            </div>
+
+        </div>
+            
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f5e864136f.js" crossorigin="anonymous"></script>
+<script src="Assests/javascript/con4tent.js"></script>
+<script src="Assests/javascript/daily.js"></script>
+</html>
